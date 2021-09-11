@@ -1,0 +1,25 @@
+/* components/nav/NavHeader.wxss */
+.header{
+  padding: 20rpx;
+}
+.header .title{
+  font-size: 26rpx;
+  color: #555;
+}
+.header .more{
+  display: flex;
+  justify-content: space-between;
+}
+.header .more text:nth-child(2){
+  margin-right: 20rpx;
+  line-height: 50rpx;
+  width: 150rpx;
+  border: #555 2rpx solid;
+  font-size: 24rpx;
+  text-align: center;
+  border-radius: 25rpx;
+}
+
+.header .more text:nth-child(2):active{
+  background-color:#5e8b7e ;
+}

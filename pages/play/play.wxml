@@ -1,0 +1,48 @@
+<view class="songsDetailContainer">
+		<!-- header -->
+		<view class="header">
+        <image src="/static/images/song/下  拉.png" />
+				<view class="msg">
+          <text>{{song[0].name || radio.channels[0]}}</text>
+				  <text>{{song[0].ar[0].name||radio.name}} ></text>
+        </view>
+        <image src="/static/images/song/分享.png"/>
+		</view>
+
+    <view class="body">
+      <image src="{{song[0].al.picUrl || radio.coverUrl}}" bind:tap="handleMusicPlay" />
+    </view>
+
+    <view class="footer" hover-class="none" hover-stop-propagation="false">
+      <view class="features">
+       <image src="/static/images/song/爱心.png" />
+       <image src="/static/images/song/下载.png" />
+       <image src="/static/images/song/评论.png" />
+       <image src="/static/images/song/更多.png" />
+      </view>
+
+      <view class="progressBar">
+        <view class="schedule">
+          <!-- 线条 -->
+          <view style="width:{{progressBar +'rpx'}}">
+            <view class="round" bind:touchmove="currentTimeUpdate"></view>
+          </view>
+          <!-- 圆球 -->
+          <view></view>
+        </view>
+        
+        <view class="date">
+          <text>{{currentTime}}</text>
+          <text>{{totalLength}}</text>
+        </view>
+      </view>
+
+      <view class="last">
+        <image src="/static/images/song/循环.png" />
+       <image src="/static/images/song/上一首.png" id="up" bind:tap="updateMusic" />
+       <image src="{{isPlay?'/static/images/song/暂停 (4).png': '/static/images/song/暂停 (1).png'}}" bind:tap="handleMusicPlay"/>
+       <image src="/static/images/song/下一首.png" id="next" bind:tap="updateMusic" />
+       <image src="/static/images/song/列表.png" />
+      </view>
+    </view>
+</view>

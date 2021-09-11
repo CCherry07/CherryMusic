@@ -1,0 +1,73 @@
+.recommendContainer{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.listScroll{
+  height: calc(100vh - 380rpx);
+}
+.header image{
+  width: 100%;
+  height: 300rpx;
+}
+.header{
+  position: relative;
+}
+.header .date{
+  position: absolute;
+  top: 150rpx;
+  left: 50%;
+  transform: translate(-35%,-25%);
+  width: fit-content;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fff;
+}
+.songsList {
+  position: relative;
+  top: -5%;
+  padding: 0 20rpx;
+  border-radius: 30rpx;
+  background-color: #fff;
+  flex-grow: 1;
+}
+.songsList .coact{
+  padding: 10rpx;
+  display: flex;
+  justify-content:space-between;
+}
+
+.listScroll .scrollItem{
+    margin: 10rpx 0rpx 20rpx 0;
+    display: flex;
+}
+
+.listScroll .scrollItem image{
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 8rpx;
+}
+.listScroll .scrollItem .musicInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 400rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 10rpx;
+  font-size: 24rpx;
+}
+
+.listScroll .scrollItem .iconfont{
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 80rpx;
+  margin-right: 0;
+  margin-left: auto;
+  text-align: center;
+}
+
+

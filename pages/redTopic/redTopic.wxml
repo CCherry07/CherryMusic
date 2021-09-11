@@ -1,0 +1,32 @@
+<view class="redTopic">
+  <view class="header">
+    <!-- 轮播图 -->
+    <swiper class="banners" indicator-active-color="#aaa" 
+    indicator-color="ivory" indicator-dots circular="{{true}}"
+    interval="5000"
+    autoplay="{{true}}">
+      <swiper-item bind:tap="swiperActive" id="0">
+        <image src="https://p2.music.126.net/XGeK1t94CUS2aBrFRVnuGQ==/18912699509792052.jpg"></image>
+      </swiper-item>
+      <swiper-item bind:tap="swiperActive" id="1">
+        <image src="https://p2.music.126.net/VfUumUvQ7jPmJPZAFl9T-Q==/109951166045095648.jpg"></image>
+      </swiper-item>
+      <swiper-item bind:tap="swiperActive" id="2">
+        <image src="https://p2.music.126.net/5h5xtOQpBDr3_hubbPTp4Q==/109951165871425334.jpg"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+<!-- 内容 -->
+<!-- bindchange	="swiperActive" -->
+<view class="body">
+  <view class="content" wx:for="{{radio}}" wx:key="id" bind:tap="goPlay" id="{{item.mainSong.id}}"
+  
+  data-radioInfoId = '{{item.id}}'
+  
+  >
+    <image src="{{item.coverUrl}}"/>
+    <text>{{item.name}}</text>
+    <text class="iconfont icon-gengduo"></text>
+  </view>
+</view>
+</view>

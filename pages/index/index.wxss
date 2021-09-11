@@ -1,0 +1,102 @@
+/* pages/index/index.wxss */
+.banners{
+  width: 100%;
+  height: 300rpx;
+}
+.banners image{
+  width: 100%;
+  height: 100%;
+}
+.navContainer{
+  display: flex;
+  margin-top: 20rpx;
+  justify-content: space-between;
+}
+.navItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+
+.navItem .iconfont{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: #5e8b7e;
+  /* 图标 */
+  font-size: 40rpx;
+  color: #fff;
+}
+.navItem text{
+  font-size: 26rpx;
+}
+
+/* 内容 */
+.recommendScroll{
+  display: flex;
+  margin-left: 20rpx;
+  height: 280rpx;
+}
+.scrollItem{
+  width: 200rpx;
+  margin-right: 20rpx;
+  font-size: 26rpx;
+}
+.scrollItem image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+} 
+
+.scrollItem text {
+  /* 单行文本溢出 */
+  /* display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+
+  /* 多行文本溢出 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; /* 纵向对齐*/
+  -webkit-line-clamp: 2; /* 设置行数 */
+}
+
+.topList{
+  margin-top: 10rpx;
+  justify-content: space-between;
+}
+
+.topListSwiper{
+  margin-left: 20rpx;
+  height: 400rpx;
+}
+.topListSwiper .title {
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+.topListSwiper image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 9rpx;
+}
+
+.musicItem{
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.topListSwiper text{
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+  text-align: center;
+  max-width: 400rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

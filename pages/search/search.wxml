@@ -1,0 +1,56 @@
+<!-- pages/search/search.wxml -->
+<view class="searchContainer">
+  <view class="header">
+    <view class="searchInput">
+      <text class="iconfont icon-search1"></text>
+      <text class="del" bind:tap="clearContent">X</text>
+      <input type="text" value="{{searchContent}}" placeholder="{{placeholderContent}}"
+      placeholder-class="placeholder"
+       bindinput="changeInput"
+       bind:touchend="setSearchRecord"
+       />
+       
+    </view>
+
+    <text class="cancel">取消</text>
+  </view>
+  <!-- 模糊搜索 -->
+  <block wx:if="{{searchContent}}">
+    <view class="blurSearch">
+      <view class="searchContent">搜索内容:{{searchContent}}</view>
+      <view class="searchList">
+        <view class="searchItem" wx:for="{{blurSearch}}" wx:key="id">
+          <text class="iconfont icon-search1"></text>
+          <text>{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+
+
+  <block wx:else>
+
+    <!-- 搜索历史记录 -->
+  <view class="history">
+
+    <view class="title">历史</view>
+    <view class="historyItem" wx:for="{{searchRecord}}" wx:key="item">
+      {{item}}
+    </view>
+
+    <text class="iconfont icon-shanchu" bind:tap="delData"></text>
+  </view>
+
+    <view class="hot">
+      <view class="title">热搜榜</view>
+      <!-- 列表 -->
+      <view class="hotList">
+        <view class="hotItem" wx:for="{{hotList}}" wx:key="score">
+          <text class="order">{{index+1}}</text>
+          <text class="order">{{item.searchWord}}</text>
+          <image src="{{item.iconUrl?item.iconUrl:''}}" />
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

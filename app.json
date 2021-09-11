@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/video/video",
+    "pages/personalCenter/personalCenter",
+    "pages/login/login",
+    "pages/recommendSongs/recommendSongs",
+    "pages/play/play",
+    "pages/search/search",
+    "pages/redTopic/redTopic"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#D83A56",
+    "navigationBarTitleText": "CherryMusic",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#5e8b7e",
+    "selectedColor": "#000",
+    "backgroundColor": "",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "HOMEPAGE",
+        "iconPath": "/static/images/tabs/tab-home.png",
+        "selectedIconPath": "/static/images/tabs/tab-home-current.png"
+      },
+      {
+        "pagePath": "pages/redTopic/redTopic",
+        "text": "redTopic",
+        "iconPath": "/static/images/tabs/act-ui1.png",
+        "selectedIconPath": "/static/images/tabs/act-ui.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "VIDEO",
+        "iconPath": "/static/images/tabs/select.png",
+        "selectedIconPath": "/static/images/tabs/selected.png"
+      },
+      {
+        "pagePath": "pages/personalCenter/personalCenter",
+        "text": "CENTER",
+        "iconPath": "/static/images/tabs/tab-my.png",
+        "selectedIconPath": "/static/images/tabs/tab-my-current.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio"
+  ]
+}

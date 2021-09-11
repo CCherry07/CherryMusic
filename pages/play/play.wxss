@@ -1,0 +1,84 @@
+.songsDetailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.songsDetailContainer .header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 100rpx;
+  width: 100%;
+}
+.songsDetailContainer .header image{
+  height: 50rpx;
+  width: 50rpx;
+  margin: 10rpx;
+}
+.songsDetailContainer .header .msg{
+  
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  flex-direction: column;
+}
+.songsDetailContainer .body image{
+    height: 400rpx;
+    width: 400rpx;
+    border-radius: 5%;
+    margin: 100rpx;
+}
+
+.songsDetailContainer .footer .features{
+  display: flex;
+  width: 100vw;
+  height: 100rpx;
+  justify-content: space-around;
+  align-items: center;
+}
+.songsDetailContainer .footer image{
+  height: 50rpx;
+  width: 50rpx;
+}
+.songsDetailContainer .footer .progressBar{
+  margin: 50rpx auto;
+  width: 600rpx;
+}
+.songsDetailContainer .footer .progressBar .schedule view:nth-of-type(1){
+  position: absolute;
+  height: 10rpx;
+  max-width:600rpx;
+  border-radius: 5rpx;
+  background-color: black;
+}
+/* 圆球 */
+.songsDetailContainer .footer .progressBar .schedule view:nth-of-type(1) .round{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 25rpx;
+  width: 25rpx;
+  transform: translateY(-30%);
+  background-color: black;
+  border-radius: 50%;
+}
+.songsDetailContainer .footer .progressBar .schedule view:nth-of-type(2){
+  height: 8rpx;
+  width: 600rpx;
+  background-color: rgb(150, 201, 201);
+}
+.songsDetailContainer .footer .progressBar .date {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+}
+.songsDetailContainer .footer .last{
+  display: flex;
+  width: 100vw;
+  height: 100rpx;
+  justify-content: space-around;
+  align-items: center;
+}
