@@ -1,4 +1,4 @@
-# CherryMusic
+# CherryMusic 仿网易云小程序
 
 ## Project setup
 
